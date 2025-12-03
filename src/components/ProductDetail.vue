@@ -2,7 +2,7 @@
   <br>
   <div class="product-detail" v-if="productExists">
     <div class="product-image">
-      <img :src="product.image" :alt="product.name" />
+      <img :src="`/images/${product.image}.jpg`" :alt="product.name" />
     </div>
     <div class="product-info">
       <h2>{{ product.name }}</h2>
